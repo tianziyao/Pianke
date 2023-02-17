@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html id="zoomroot" style="font-size: 284px">
+ <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>护眼模式原理</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0.05);
+        -webkit-text-size-adjust: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-family: PingFang SC, Microsoft YaHei, Arial;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+      }
+      img {
+        vertical-align: top;
+        border: none;
+      }
+      input,
+      textarea {
+        -webkit-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+        -webkit-appearance: none;
+      }
+      button:focus,
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: 0;
+      }
+      input[type="email"],
+      input[type="number"],
+      input[type="password"],
+      input[type="search"],
+      input[type="tel"],
+      input[type="text"],
+      input[type="url"],
+      textarea {
+        -webkit-appearance: none;
+        border: 1px solid;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+      }
+      input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+      a {
+        text-decoration: none;
+        -webkit-touch-callout: none;
+      }
+      em,
+      i {
+        font-style: normal;
+      }
+      li {
+        list-style: none;
+      }
+      .wrap .btm60 {
+        margin-bottom: 0.6rem;
+      }
+      .wrap {
+        padding: 0 0.2rem 0.2rem 0.2rem;
+      }
+      .wrap h2 {
+        position: relative;
+        height: 0.2rem;
+        line-height: 0.2rem;
+        margin: 0.2rem 0;
+        font-size: 0.16rem;
+        color: #d43c33;
+      }
+      .wrap h2:before {
+        display: inline-block;
+        overflow: hidden;
+        -webkit-border-radius: 0.06rem;
+        border-radius: 0.06rem;
+        width: 0.06rem;
+        height: 0.06rem;
+        content: ".";
+        background: #d43c33;
+        vertical-align: middle;
+        margin-top: -0.03rem;
+        margin-right: 0.1rem;
+        text-index: -99.99rem;
+      }
+      .wrap p {
+        margin: 0.2rem 0;
+        font-size: 0.14rem;
+        color: #4a4a4a;
+        line-height: 1.8;
+        text-align: justify;
+      }
+      .wrap .pic {
+        text-align: center;
+        margin: 0.2rem 0;
+        text-align: center;
+      }
+      .wrap .pic .img1 {
+        margin: 0 auto;
+        width: 2.37rem;
+        height: 1.28rem;
+      }
+      .wrap .pic .img2 {
+        margin: 0 auto;
+        width: 2.37rem;
+        height: 1.83rem;
+      }
+      .wrap .phone-pic {
+        margin-bottom: 0.3rem;
+      }
+      .wrap .pic .img3 {
+        margin: 0 auto;
+        width: 2.96rem;
+        height: 1.24rem;
+      }
+      .refer-box {
+        font-size: 0.14rem;
+      }
+      .refer-box h3 {
+        font-size: 0.14rem;
+        border-bottom: 1px solid #4a4a4a;
+        padding-bottom: 0.1rem;
+        margin-bottom: 0.1rem;
+      }
+      .refer-box li {
+        position: relative;
+        padding-left: 0.22rem;
+        color: #4a4a4a;
+        line-height: 1.8;
+      }
+      .refer-box li:nth-child(1):before {
+        content: "[1]";
+        position: absolute;
+        left: 0;
+      }
+      .refer-box li:nth-child(2):before {
+        content: "[2]";
+        position: absolute;
+        left: 0;
+      }
+      .refer-box li:nth-child(3):before {
+        content: "[3]";
+        position: absolute;
+        left: 0;
+      }
+    </style>
+    <script>
+      !(function (n, e) {
+        function t() {
+          var n = i.clientWidth;
+          n && (i.style.fontSize = (n / 375) * 100 + "px");
+        }
+        var i = n.documentElement,
+          d = "orientationchange" in window ? "orientationchange" : "resize";
+        n.addEventListener &&
+          (e.addEventListener(d, t, !1),
+          n.addEventListener("DOMContentLoaded", t, !1));
+      })(document, window);
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <h2>我们如何护眼</h2>
+      <p class="pic">
+        <img class="img1" src="https://qidian.gtimg.com/apps/settings/images/pic01-8e9abf2a11.png" />
+      </p>
+      <p>
+        护眼模式能够过滤掉屏幕中的大部分有害蓝光，在保证阅读体验的同时大大减轻眼部负担，为所有读者的双眼保驾护航。启动护眼模式后，画面会与原先产生一定的色差，这是因为蓝光的缺失使所有像素的RGB值产生了变化。建议使用系统推荐值，以保证护眼与阅读体验的平衡。
+      </p>
+      <p class="pic phone-pic">
+        <img class="img2" src="https://qidian.gtimg.com/apps/settings/images/pic02-cff78cd4cc.png" />
+      </p>
+      <h2>蓝光的危害</h2>
+      <p>
+        手机、平板等电子设备的发光光谱中含有大量蓝光。波长为400-500纳米的蓝光拥有非常高的能量和穿透力，长时间照射双眼会导致眼部疲劳，甚至可能诱发永久性的眼部疾病。
+      </p>
+      <p class="pic">
+        <img class="img3" src="https://qidian.gtimg.com/apps/settings/images/pic03-47cfaf4b89.png" />
+      </p>
+      <p>
+        <b>蓝光导致黄斑病：</b>李查德·冯克（R.H.W.
+        Funk）教授指出，手机、平板等屏幕光含有大量不规则频率的高能短波蓝光，它具有极高能量，能够穿透晶状体直达视网膜。蓝光照射视网膜会产生自由基，而这些自由基会导致视网膜色素上皮细胞衰亡，上皮细胞的衰亡会导致光敏细胞缺少养分从而引起视力损伤，此为老年失盲-黄斑病（AMD）的罪魁祸首。
+      </p>
+      <p class="btm60">
+        <b>蓝光干扰褪黑素分泌，影响睡眠质量</b
+        >：褪黑素是人体的松果体产生的一种胺类激素，对于调节人的生理节律、改善睡眠有重要作用。而蓝光会抑制褪黑素分泌并提高肾上腺皮质激素的生成，从而破坏激素分泌平衡，直接影响睡眠质量。哈佛大学研究表明，如果你临睡前使用iPad，智能手机或笔记本电脑，它们发出的光线足以刺激大脑，使得大脑处于兴奋状态，影响生物钟规律，出现入睡需要时间过长，睡眠过程中多次醒来等失眠症状。
+      </p>
+      <div class="refer-box">
+        <h3>参考资料</h3>
+        <ol>
+          <li>
+            Lockley S W, Brainard G C, Czeisler C A. High sensitivity of the
+            human circadian melatonin rhythm to resetting by short wavelength
+            light [J]. J Clin Endocr Metab, 2003, 88 (9): 4502-4505.
+          </li>
+          <li>
+            R.H.W. Funk. ILA Conference&nbsp;2010.7th&nbsp;Annual Meeting.
+          </li>
+          <li>
+            周太明. 绿色照明、SSL及LED蓝光危害之我见[J]. 半导体照明, 2013, (2):
+            48-56.
+          </li>
+        </ol>
+      </div>
+    </div>
+    <script
+      data-ignore="true"
+      src="https://%3C%25%3D%20yue.staticconf.staticdomain%20%25%3E/lbf/1.0.2/LBF.js?max_age=31536000"
+    ></script>
+    <script>
+      LBF.config(<%- JSON.stringify(YUE.staticConf.lbf.conf) -%>)
+    </script>
+  </body>
+</html>
